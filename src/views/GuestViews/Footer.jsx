@@ -1,6 +1,8 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import { Link } from "react-router-dom";
+// import { Link } from '@mui/material';
 import { Button } from 'react-bootstrap';
 // import './Footer.css'; // Make sure to create this CSS file if you need custom styles
 export default function Footer() {
@@ -8,11 +10,11 @@ export default function Footer() {
     <div className="bg-dark px-5 pt-5 pb-2" style={{color: "#888"}}>
       <div className='row'>
       <ul className="d-flex flex-column col-md-5" style={{width: "40%"}}>
-        <li>PRODUCT</li>
-        <li>Photovoltaic Labs</li>
-        <li>SUPPORT</li>
-        <li>About Us</li>
-        <li>Contact</li>
+        <li className='text-white'>PRODUCT</li>
+        <li className='text-white'>Photovoltaic Labs</li>
+        <li className='text-white'>SUPPORT</li>
+        <li><Link to="/about" className='text-white text-decoration-none' >About Us</Link></li>
+        <li><Link to="/contact" className='text-white text-decoration-none' >Contact</Link></li>
       </ul>
       <div className='col-md-5'>
         <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>

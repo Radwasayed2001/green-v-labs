@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import Lab from "../../../src/assets/NewLab4.png";
 import GoogleIcon from "../../../src/assets/google.png";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, Navigate, useNavigate } from "react-router-dom"; // Import useNavigate
+// import { Nav } from "react-bootstrap";
 
 export default function Login() {
     const [errors, setErrors] = useState(null);
@@ -13,6 +14,7 @@ export default function Login() {
         e.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
+        navigate("/userhome");
     };
 
     return (

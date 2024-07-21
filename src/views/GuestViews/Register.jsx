@@ -17,6 +17,7 @@ export default function Register() {
         e.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
+        navigate("/userhome");
     };
 
     return (
